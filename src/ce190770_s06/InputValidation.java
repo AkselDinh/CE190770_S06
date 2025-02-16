@@ -8,8 +8,11 @@ package ce190770_s06;
 import java.util.Scanner;
 
 /**
- *
- *
+ * S06 - Array Manipulation Program
+ * InputValidation class provides utility methods
+ * for validating different types of user input Contains methods for validating
+ * integers, doubles, and strings with various constraints
+ * 
  * @author Dinh Cong Phuc - CE190770 - 09/Feb/2025
  */
 public class InputValidation {

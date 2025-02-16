@@ -6,7 +6,7 @@
 package ce190770_s06;
 
 /**
- * S06 - Program to insert new elements into an existing array.
+ * S06 - Array Manipulation Program
  * Utility class containing merge sort implementation Provides methods to sort
  * integer arrays in ascending order
  *
