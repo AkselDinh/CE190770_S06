@@ -6,8 +6,10 @@
 package ce190770_s06;
 
 /**
+ * S06 - Array Manipulation Program This class provide functions for operation
+ * on array
  *
- * @author PD
+ * @author Dinh Cong Phuc - CE190770 - 09/Feb/2025
  */
 public class ArrayCtrl {
 
@@ -52,8 +54,10 @@ public class ArrayCtrl {
             }
             // Display search results
             if (!found) {
+                // If search not found
                 System.out.println("Value not found in array");
             } else {
+                // If search found
                 System.out.printf("Found value at index: %d\n", i);
             }
         }
@@ -63,12 +67,14 @@ public class ArrayCtrl {
      * Prints all values currently in the array
      */
     public void arrPrint() {
+        // Create a new empty string to store array elements
         String str = new String();
         if (arrSize == 0) {
             System.out.println("Array is empty");
         } else {
             // Build string of array values
             for (int i = 0; i < arrSize; i++) {
+                // Append each array element followed by comma and space
                 str += arr[i] + ", ";
             }
             // Remove trailing comma and space
@@ -80,25 +86,32 @@ public class ArrayCtrl {
      * Prints values that fall within a user-specified range
      */
     public void arrPrintMinMax() {
+        // Create a new empty string to store filtered array elements
         String str = new String();
+        // Check if array is empty
         if (arrSize == 0) {
             System.out.println("Array is empty");
         } else {
             // Get range bounds from user
+            // Get min value for bounds
             System.out.print("Please input min: ");
             int min = InputValidation.getIntInput();
+            // Get max value for bounds
             System.out.print("Please input max: ");
             int max = InputValidation.getIntInput();
+            // Try catch block try to find value within range and handles exception
             try {
                 // Build string of values within range
                 for (int i = 0; i < arrSize; i++) {
                     if (arr[i] >= min && arr[i] <= max) {
+                        // Append array element that falls within range, followed by comma and space
                         str += arr[i] + ", ";
                     }
                 }
                 // Remove trailing comma and space
                 System.out.println(str.substring(0, str.length() - 2));
             } catch (Exception e) {
+                // Handles Exception caused by invalid range
                 System.out.println("Invalid range");
             }
         }

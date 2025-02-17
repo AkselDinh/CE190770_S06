@@ -8,11 +8,10 @@ package ce190770_s06;
 import java.util.Scanner;
 
 /**
- * S06 - Array Manipulation Program
- * InputValidation class provides utility methods
- * for validating different types of user input Contains methods for validating
- * integers, doubles, and strings with various constraints
- * 
+ * S06 - Array Manipulation Program InputValidation class provides utility
+ * methods for validating different types of user input Contains methods for
+ * validating integers, doubles, and strings with various constraints
+ *
  * @author Dinh Cong Phuc - CE190770 - 09/Feb/2025
  */
 public class InputValidation {
@@ -184,6 +183,7 @@ public class InputValidation {
         String in = getMultiStringNonEmpty();
         // Keep prompting until input contains only letters and spaces
         while (!in.matches("[a-zA-Z ]+")) {
+            // If input doesn't contains a-z, print error
             System.out.print("Please do not include number, try again:");
             in = getMultiStringNonEmpty();
         }

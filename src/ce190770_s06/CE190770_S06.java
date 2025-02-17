@@ -6,17 +6,17 @@
 package ce190770_s06;
 
 /**
- * S06 - Array Manipulation Program
- * Main driver class that initializes and starts the program
- * 
+ * S06 - Array Manipulation Program Main driver class that initializes and
+ * starts the program
+ *
  * @author Dinh Cong Phuc - CE190770 - 09/Feb/2025
  */
 public class CE190770_S06 {
 
     /**
-     * Main entry point of the program
-     * Creates a new UI instance and starts the program loop
-     * 
+     * Main entry point of the program Creates a new UI instance and starts the
+     * program loop
+     *
      * @param args command line arguments (not used)
      */
     public static void main(String[] args) {
